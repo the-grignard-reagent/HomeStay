@@ -40,12 +40,15 @@ public class UserController {
 
 
     @GetMapping("/get-logged-in-profile-info")
-    public ResponseEntity<Response> getLoggedInUserProfile(@PathVariable("userId") String userId){
+    public ResponseEntity<Response> getLoggedInUserProfile() {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String email = authentication.getName();
+
         Response response = userService.getMyInfo(email);
-        return ResponseEntity.status(response.getStatusCode()).body(response);
+        return ResponseEntity
+                .status(response.getStatusCode())
+                .body(response);
     }
 
 
