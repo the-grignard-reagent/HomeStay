@@ -156,9 +156,15 @@ export default class ApiService {
 
     /* This  get booking by the cnfirmation code */
     static async getBookingByConfirmationCode(bookingCode) {
-        const result = await axios.get(`${this.BASE_URL}/bookings/get-by-confirmation-code/${bookingCode}`)
-        return result.data
-    }
+    const result = await axios.get(
+        `${this.BASE_URL}/bookings/get-by-confirmation-code/${bookingCode}`,
+        {
+            headers: this.getHeader()
+        }
+    );
+
+    return result.data;
+}
 
     /* This is the  to cancel user booking */
     static async cancelBooking(bookingId) {
