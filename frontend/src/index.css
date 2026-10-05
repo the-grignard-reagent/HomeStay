@@ -198,7 +198,7 @@ button[type="submit"]:hover {
 
 /* The header banner */
 .header-banner {
-    /* background-image: url("../public/assets/images/Homestay-banner.webp"); */
+    background-image: url("../public/assets/images/Homestay-banner1.webp");
     background-size: cover;
     background-position: center;
     position: relative;

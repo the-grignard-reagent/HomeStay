@@ -19,13 +19,13 @@ const HomePage = () => {
             {/* HEADER / BANNER ROOM SECTION */}
             <section>
                 <header className="header-banner">
-                    <img src="./assets/images/hotel.webp" alt="HomeStay" className="header-image" />
+                    {/* <img src="./assets/images/hotel.webp" alt="HomeStay" className="header-image" /> */}
                     <div className="overlay"></div>
                     <div className="animated-texts overlay-content">
                         <h1>
                             Welcome to <span className="phegon-color">HomeStay</span>
                         </h1><br />
-                        <h3>Step into a haven of comfort and care</h3>
+                        <h3>Craft your next itinerary with comfort and care</h3>
                     </div>
                 </header>
             </section>
